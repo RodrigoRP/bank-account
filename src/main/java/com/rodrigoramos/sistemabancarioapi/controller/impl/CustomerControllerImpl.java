@@ -2,8 +2,8 @@ package com.rodrigoramos.sistemabancarioapi.controller.impl;
 
 import com.rodrigoramos.sistemabancarioapi.controller.CustomerController;
 import com.rodrigoramos.sistemabancarioapi.controller.constant.RestConstant;
-import com.rodrigoramos.sistemabancarioapi.converter.CustomerConverter;
 import com.rodrigoramos.sistemabancarioapi.dto.CustomerNewDTO;
+import com.rodrigoramos.sistemabancarioapi.mapper.CustomerMapper;
 import com.rodrigoramos.sistemabancarioapi.model.Customer;
 import com.rodrigoramos.sistemabancarioapi.service.CustomerService;
 import lombok.AllArgsConstructor;
@@ -21,7 +21,7 @@ import java.util.List;
 public class CustomerControllerImpl implements CustomerController {
 
     private final CustomerService customerService;
-    private final CustomerConverter converter;
+    private final CustomerMapper converter;
 
     @Override
     @PostMapping("/")

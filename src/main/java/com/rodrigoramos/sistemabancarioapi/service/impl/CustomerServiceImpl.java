@@ -10,7 +10,7 @@ import com.rodrigoramos.sistemabancarioapi.repository.CustomerRepository;
 import com.rodrigoramos.sistemabancarioapi.repository.LimitConfigurationRepository;
 import com.rodrigoramos.sistemabancarioapi.service.CardCalculator;
 import com.rodrigoramos.sistemabancarioapi.service.CustomerService;
-import com.rodrigoramos.sistemabancarioapi.service.Enum.CardEnum;
+import com.rodrigoramos.sistemabancarioapi.service.enums.CardEnum;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;

@@ -1,18 +1,18 @@
 package com.rodrigoramos.sistemabancarioapi.service.impl;
 
-import com.rodrigoramos.sistemabancarioapi.converter.CustomerConverter;
 import com.rodrigoramos.sistemabancarioapi.dto.CustomerNewDTO;
+import com.rodrigoramos.sistemabancarioapi.mapper.CustomerMapper;
 import com.rodrigoramos.sistemabancarioapi.model.Customer;
 import com.rodrigoramos.sistemabancarioapi.service.CustomerService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Service
 public class DatabaseService {
 
-    private CustomerService service;
-    private CustomerConverter converter;
+    private final CustomerService service;
+    private final CustomerMapper converter;
 
     public void instantiateDatabase() {
         CustomerNewDTO c1 = new CustomerNewDTO("Adamasor", "123123", 1);

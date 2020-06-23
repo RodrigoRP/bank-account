@@ -1,7 +1,7 @@
 package com.rodrigoramos.sistemabancarioapi.service.impl;
 
 import com.rodrigoramos.sistemabancarioapi.service.CardCalculator;
-import com.rodrigoramos.sistemabancarioapi.service.Enum.CardEnum;
+import com.rodrigoramos.sistemabancarioapi.service.enums.CardEnum;
 
 public class CreditCardFactory {
     private static CreditCardFactory creditCardFactoryInstance;
