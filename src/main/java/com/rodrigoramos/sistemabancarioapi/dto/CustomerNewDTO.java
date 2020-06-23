@@ -19,7 +19,7 @@ public class CustomerNewDTO implements Serializable {
     private static final long serialVersionUID = 4471777119419172870L;
 
     @NotEmpty(message = "Name may not be empty")
-    @Length(min=5, max=120, message="The length must be between 5 and 120 characters")
+    @Length(min = 5, max = 120, message = "The length must be between 5 and 120 characters")
     private String name;
 
     @NotEmpty(message = "cpfOuCnpj may not be empty")

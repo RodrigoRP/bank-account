@@ -17,7 +17,6 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.when;
 
 
-
 @SpringBootTest
 public class CustomerServiceTest {
 
@@ -54,7 +53,6 @@ public class CustomerServiceTest {
         List<Customer> actual = customerService.findAll();
         assertThat(actual.size()).isEqualTo(1);
     }
-
 
 
     private Customer customer(Long id) {

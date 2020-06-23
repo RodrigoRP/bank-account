@@ -27,7 +27,7 @@ public class CustomerInsertValidator implements ConstraintValidator<CustomerInse
         if (objDto.getCustomerType().equals(CustomerType.PESSOAJURIDICA.getId()) && !BR.isValidCNPJ(objDto.getCpfOuCnpj())) {
             list.add(new FieldMessage("cpfOuCnpj", "Invalid CNPJ"));
         }
-        if(objDto.getCustomerType() == null) {
+        if (objDto.getCustomerType() == null) {
             list.add(new FieldMessage("customerType", "customerType not be null"));
         }
 

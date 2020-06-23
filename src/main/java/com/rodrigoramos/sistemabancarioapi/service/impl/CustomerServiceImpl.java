@@ -34,6 +34,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Async
     @Override
     public Customer save(Customer customer) {
+
         customer.setScore(generateRandomNumber(9));
         Account account = createAccount(customer);
         customer.setAccounts(account);
